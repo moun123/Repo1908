@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Template Layout</title>
+	<link rel="stylesheet" type="text/css" href="../MounFS/fonts/css/font-awesome.css">
+	<style type="text/css">
+		* {
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+		}
+
+		#main {
+			width: 75%;
+			margin: 0 auto;
+		}
+
+		#header {
+			/* width: 75%;
+			margin: 0 auto; */
+			/* background: #ccc; */
+			padding: 10px;
+			border: 1px solid #2CB999;
+		}
+
+		#content {
+			text-align: center;
+			margin: auto;
+
+
+		}
+
+		#content1 {
+			border: 1px solid #2CB999;
+
+			background-image: url('../MounFS/images/laptop.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+
+			/* height: 500px; */
+			padding: 20px 10px;
+			margin: auto;
+			color:white;
+
+		}
+		
+
+		button {
+
+			background-color: #2CB999;
+			color: aliceblue;
+
+			border-radius: 15px;
+		}
+
+		.pd {
+			padding: 10px;
+		}
+
+		.mrAuto {
+			margin: auto;
+		}
+
+		#content2 {
+			border: 1px solid #2CB999;
+			padding: 20px 10px;
+		}
+
+		#content3 {
+			border: 1px solid #2CB999;
+			padding: 0px 20px;
+			/* width:24%; */
+			background-color: #2CB999;
+			color: white;
+		}
+		
+		#content3 button {
+			background-color: #47C1A8;
+		}
+
+		#content4 {
+			border: 1px solid #2cb999;
+			padding: 20px 60px; 
+
+		}
+		#content5 {
+			border: 1px solid #2cb999;
+			padding: 20px 60px; 
+			
+
+		}
+		#content5 i{
+			display: inline-block;
+			/* border:1px solid red; */
+			width:24%;
+			height:100px;
+			color:#2CB999;
+			padding:10px 10px;
+		}
+		i>span{
+			color:black;
+			display: block;
+			font-size: large;
+		}
+		#abtCmpny {
+			width: 60%;
+			padding-right: 40px;
+			text-align: justify;
+				text-justify: inter-word;
+		}
+
+		#ourAdv {
+			width:40%; 
+			padding-left: 40px;
+			text-align: justify;
+				text-justify: inter-word;
+		}
+
+		.ourAdvList {
+			list-style-position: inside;
+			margin:5px;
+			border-radius:30px;
+			 background-color: lightgray; 
+		}
+
+		#footer {
+			border: 1px solid #2cb999;
+			padding:20px 10px;
+			text-align: center;
+			margin:auto;
+		}
+
+		.content3item {
+			float: left;
+			border-left: 1px solid white;
+			width: 25%;
+		}
+		#content3 div.content3item:first-child{
+			border-left:none;
+		}
+		
+
+
+		#logo {
+			width: 250px;
+			text-align: center;
+		}
+
+		/*#menu{
+			width: 700px;
+		}*/
+		.menuItem {
+			float: left;
+			padding: 10px;
+		}
+
+		.fL {
+			float: left;
+		}
+
+		.fR {
+			float: right;
+		}
+
+		.clear {
+			clear: both;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="main">
+		<div id="header">
+			<div id="logo" class="fL">
+				<h1> SOME LOGO</h1>
+			</div>
+			<div id="menu" class="fR">
+				<div class="fR">
+					<div class="menuItem"> HOME </div>
+					<div class="menuItem"> ABOUT </div>
+					<div class="menuItem"> GALLERY </div>
+					<div class="menuItem"> CONTACT </div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div id="content">
+			<div id="content1">
+				<h3 class="pd">Lorem Ipsum dolor siet</h3>
+				<p class="pd">Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				<p class="pd">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+				<p class="pd">
+					<button class="pd">Read More</button>
+				</p>
+			</div>
+			<div id="content2">
+				<h3 class="pd">Feautured Services</h3>
+				<p class="pd">Ipsum is simply dummy text of the printing and typesetting industry.</p>
+			</div>
+			<div id="content3">
+				<div class="content3item">
+					<h3 class="pd">Lorem Ipsum</h3>
+					<p class="pd">Ipsum is simply dummy text of the printing and typesetting industrys
+					</p>
+					<p class="pd">
+						<button class="pd">More</button>
+					</p>
+				</div>
+				<div class="content3item">
+					<h3 class="pd">Lorem Ipsum</h3>
+					<p class="pd">Ipsum is simply dummy text of the printing and typesetting industrys
+					</p>
+					<p class="pd">
+						<button class="pd">More</button>
+					</p>
+				</div>
+				<div class="content3item">
+					<h3 class="pd">Lorem Ipsum</h3>
+					<p class="pd">Ipsum is simply dummy text of the printing and typesetting industrys
+					</p>
+					<p class="pd">
+						<button class="pd">More</button>
+					</p>
+				</div>
+				<div class="content3item">
+					<h3 class="pd">Lorem Ipsum</h3>
+					<p class="pd">Ipsum is simply dummy text of the printing and typesetting industry</p>
+					<p class="pd">
+						<button class="pd">More</button>
+					</p>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div id="content4">
+				<div class="fL" id="abtCmpny">
+					<h3 class="pd">About our Company</h3>
+					<p class="pd">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+						when an unknown printer took a galley of type and scrambled it to make a type
+						specimen book.
+					</p>
+					<p class="pd">
+						<button class="pd">Read More</button>
+					</p>
+				</div>
+				<div class="fR" id="ourAdv">
+					<h3 class="pd">Our Advantages</h3>
+					<ul>
+						<li class="ourAdvList pd">Advantage 1</li>
+						<li class="ourAdvList pd">Advantage 1</li>
+						<li class="ourAdvList pd">Advantage 1</li>
+						<li class="ourAdvList pd">Advantage 1</li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div id="content5">
+				
+					<i class="fa fa-smile-o fa-2x" aria-hidden="true">
+						<span>120+ Happy Clients</span></i>
+				
+				<i class="fa fa-check-square-o fa-2x" aria-hidden="true"><span>600 Projects completed</span></i>
+				<i class="fa fa-trophy fa-2x" aria-hidden="true"><span>25 Awards Won</span></i>
+			<i class="fa fa-map-marker fa-2x" aria-hidden="true"><span>3 Offices</span></i>
+				
+			</div>
+		</div>
+		
+			<div id="footer">
+				<h3 class="pd">Feautured Services</h3>
+				<p class="pd">Ipsum is simply dummy text of the printing and typesetting industry.</p>
+			</div>
+		
+	</div>
+</body>
+
+</html>
