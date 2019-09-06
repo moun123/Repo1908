@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+  
+  .drpDwnMenuList {
+      /* background-color: lightgrey; */
+      display: flex;
+      position: sticky;
+      top: 0;
+      align-items: center;
+    }
+    .drpDwnMenuList >ul{
+      margin:auto;
+      padding:0px;
+    }
+    .dropdownListItem{
+      
+      position: relative;
+      display: inline-block;
+    }
+    #lookAtMe {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    overflow: hidden
+}
+#lookAtMe li {
+    display: table-cell;
+    *float: left; /* improve IE7 */
+    height: 50px;
+    text-align: center;
+    padding-left: 10px
+}
+#lookAtMe li:first-child {
+    padding-left: 0
+}
+#lookAtMe li a {
+    width: 100%;
+    display: block;
+    height: 100%;
+    line-height: 25px;
+    text-decoration: none;
+    background-color: #e0e0f0;
+    font-weight: bold;
+    color: #021020;
+}
+#lookAtMe li a:hover {
+    background-color: #498cd5;
+    color: #ddeeee;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+
+      <ul class="nav navbar-nav">
+        <li class=""><a href="#">Home</a></li>
+        <li><a href="#">Page 1</a></li>
+        <li><a href="#">Page 2</a></li>
+      </ul>
+      <form class="navbar-form navbar-right" action="/action_page.php">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="search">
+        </div>
+        <button type="" class="btn btn-primary">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="container" style="margin-bottom:20px;">
+    <div class="row">
+      <div class="col-sm-4" style="padding-left:10px;padding-right:10px;">
+        <div style="background-color:lightgrey;height:100px;">Logo</div>
+      </div>
+      <div class="col-sm-8" style="padding-left:10px;padding-right:10px;">
+        <div style="background-color:lightgrey;height:100px;">Responsive Ads</div>
+      </div>
+
+
+    </div>
+  </div>
+  <div class="container-fluid navbar navbar-default drpDwnMenuList">
+    <ul class="">
+      <li class="dropdownListItem">
+          <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+              Dropdown1
+              <span class="caret"></span>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Link 1</a>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+      </li>
+      <li class="dropdownListItem">
+          <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+              Dropdown 2
+              <span class="caret"></span>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Link 1</a>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+      </li>
+      <li class="dropdownListItem">
+          <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+              Dropdown 3
+              <span class="caret"></span>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Link 1</a>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+      </li>
+    </ul>
+  </div>
+<div class="container" style="margin-bottom:20px;">
+    <div class="row">
+        <article class="col-sm-8" style="padding-left:10px;padding-right:10px;">
+            <div id="navigation" style="background-color:lightgrey;height:100px;">
+                <label>Promo Article</label>
+            </div>
+            
+        </article>
+
+        <article class="col-sm-4" style="padding-left:10px;padding-right:10px;">
+            <div id="text1" style="background-color:lightgrey;height:45px;margin-bottom:10px;">
+                <label>Text 1</label>
+            </div>
+            <div id="text1" style="background-color:lightgrey;height:45px;margin-top:10px;">
+                <label>Text 2</label>
+            </div>
+        </article>
+           </div>
+</div>
+<div class="container-fluid">
+  <hr style="border-bottom:1px solid black;">
+  <p style="text-align: center;"> BREAKING NEWS</p>
+  <hr style="border-bottom:1px solid black;">
+</div>
+<div class="container">
+    <ul id="lookAtMe">
+        <li><a href="#">one</a></li>
+        <li><a href="#">two</a></li>
+        <li><a href="#">three</a></li>
+        <li><a href="#">four</a></li>
+        <li><a href="#">five</a></li>
+    </ul>
+</div>
+<div class="container-fluid">
+    <hr style="border-bottom:1px solid black;">
+    <p style="text-align: center;"> LATEST STORIES</p>
+    <hr style="border-bottom:1px solid black;">
+  </div>
+  
+</body>
+
+</html>
