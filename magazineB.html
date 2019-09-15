@@ -8,58 +8,87 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="fonts/css/font-awesome.css">
   <style>
-  
-  .drpDwnMenuList {
+    .drpDwnMenuList {
       /* background-color: lightgrey; */
       display: flex;
       position: sticky;
       top: 0;
       align-items: center;
+      z-index: 1;
     }
-    .drpDwnMenuList >ul{
-      margin:auto;
-      padding:0px;
+
+    .pd {
+      padding: 20px;
     }
-    .dropdownListItem{
-      
+    .flickrImg1{
+      display: inline-block;
+    }
+    .flickrImg {
+      color: aliceblue;
+      background: lightgray;
+      display: inline-block;
+      padding: 5px;
+      border-radius: 0;
+      font-size: 14px;
+      line-height: 1;
+      white-space: nowrap;
+      cursor: default;
+      /* background:#1779ba; */
+      color: #fefefe;
+      margin: 3px;
+    }
+
+    .drpDwnMenuList>ul {
+      margin: auto;
+      padding: 0px;
+    }
+
+    .dropdownListItem {
+
       position: relative;
       display: inline-block;
     }
-    #lookAtMe {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    display: table;
-    table-layout: fixed;
-    overflow: hidden
-}
-#lookAtMe li {
-    display: table-cell;
-    *float: left; /* improve IE7 */
-    height: 50px;
-    text-align: center;
-    padding-left: 10px
-}
-#lookAtMe li:first-child {
-    padding-left: 0
-}
-#lookAtMe li a {
-    width: 100%;
-    display: block;
-    height: 100%;
-    line-height: 25px;
-    text-decoration: none;
-    background-color: #e0e0f0;
-    font-weight: bold;
-    color: #021020;
-}
-#lookAtMe li a:hover {
-    background-color: #498cd5;
-    color: #ddeeee;
-}
 
+    #lookAtMe {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      display: table;
+      table-layout: fixed;
+      overflow: hidden
+    }
+
+    #lookAtMe li {
+      display: table-cell;
+      *float: left;
+      /* improve IE7 */
+      height: 50px;
+      text-align: center;
+      padding-left: 10px
+    }
+
+    #lookAtMe li:first-child {
+      padding-left: 0
+    }
+
+    #lookAtMe li a {
+      width: 100%;
+      display: block;
+      height: 100%;
+      line-height: 25px;
+      text-decoration: none;
+      background-color: #e0e0f0;
+      font-weight: bold;
+      color: #021020;
+    }
+
+    #lookAtMe li a:hover {
+      background-color: #498cd5;
+      color: #ddeeee;
+    }
   </style>
 </head>
 
@@ -67,7 +96,6 @@
 
   <nav class="navbar navbar-default">
     <div class="container-fluid">
-
       <ul class="nav navbar-nav">
         <li class=""><a href="#">Home</a></li>
         <li><a href="#">Page 1</a></li>
@@ -97,79 +125,262 @@
   <div class="container-fluid navbar navbar-default drpDwnMenuList">
     <ul class="">
       <li class="dropdownListItem">
-          <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
-              Dropdown1
-              <span class="caret"></span>
-            </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Link 1</a>
-              <a class="dropdown-item" href="#">Link 2</a>
-              <a class="dropdown-item" href="#">Link 3</a>
-            </div>
+        <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+          Dropdown1
+          <span class="caret"></span>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
       </li>
       <li class="dropdownListItem">
-          <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
-              Dropdown 2
-              <span class="caret"></span>
-            </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Link 1</a>
-              <a class="dropdown-item" href="#">Link 2</a>
-              <a class="dropdown-item" href="#">Link 3</a>
-            </div>
+        <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+          Dropdown 2
+          <span class="caret"></span>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
       </li>
       <li class="dropdownListItem">
-          <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
-              Dropdown 3
-              <span class="caret"></span>
-            </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Link 1</a>
-              <a class="dropdown-item" href="#">Link 2</a>
-              <a class="dropdown-item" href="#">Link 3</a>
-            </div>
+        <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+          Dropdown 3
+          <span class="caret"></span>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
       </li>
     </ul>
   </div>
-<div class="container" style="margin-bottom:20px;">
+  <div class="container" style="margin-bottom:20px;">
     <div class="row">
-        <article class="col-sm-8" style="padding-left:10px;padding-right:10px;">
-            <div id="navigation" style="background-color:lightgrey;height:100px;">
-                <label>Promo Article</label>
-            </div>
-            
-        </article>
+      <article class="col-sm-8" style="padding-left:10px;padding-right:10px;">
+        <div id="navigation" style="background-color:lightgrey;height:100px;">
+          <label>Promo Article</label>
+        </div>
 
-        <article class="col-sm-4" style="padding-left:10px;padding-right:10px;">
-            <div id="text1" style="background-color:lightgrey;height:45px;margin-bottom:10px;">
-                <label>Text 1</label>
-            </div>
-            <div id="text1" style="background-color:lightgrey;height:45px;margin-top:10px;">
-                <label>Text 2</label>
-            </div>
-        </article>
-           </div>
-</div>
-<div class="container-fluid">
-  <hr style="border-bottom:1px solid black;">
-  <p style="text-align: center;"> BREAKING NEWS</p>
-  <hr style="border-bottom:1px solid black;">
-</div>
-<div class="container">
+      </article>
+
+      <article class="col-sm-4" style="padding-left:10px;padding-right:10px;">
+        <div id="text1" style="background-color:lightgrey;height:45px;margin-bottom:10px;">
+          <label>Text 1</label>
+        </div>
+        <div id="text1" style="background-color:lightgrey;height:45px;margin-top:10px;">
+          <label>Text 2</label>
+        </div>
+      </article>
+    </div>
+  </div>
+  <div class="container">
+    <hr style="border-bottom:1px solid black;">
+    <p style="text-align: center;"> BREAKING NEWS</p>
+    <hr style="border-bottom:1px solid black;">
+  </div>
+  <div class="container">
     <ul id="lookAtMe">
-        <li><a href="#">one</a></li>
-        <li><a href="#">two</a></li>
-        <li><a href="#">three</a></li>
-        <li><a href="#">four</a></li>
-        <li><a href="#">five</a></li>
+      <li><a href="#">one</a></li>
+      <li><a href="#">two</a></li>
+      <li><a href="#">three</a></li>
+      <li><a href="#">four</a></li>
+      <li><a href="#">five</a></li>
     </ul>
-</div>
-<div class="container-fluid">
+  </div>
+  <div class="container">
     <hr style="border-bottom:1px solid black;">
     <p style="text-align: center;"> LATEST STORIES</p>
     <hr style="border-bottom:1px solid black;">
   </div>
-  
+  <div class="container">
+    <!-- <div class="row"> -->
+
+    <div class="col-sm-8" style="padding-left:0px;padding-right:0px;">
+      <div class="col-sm-12"
+        style="padding:0px;border: 1px solid black;padding-bottom: 20px;border-top: none;border-left: none;padding-top: 0px;">
+        <div class="col-sm-6" style="background-color:lightgray;height:100px;"></div>
+        <div class="col-sm-6">
+          <h5>Heading</h5>
+          <p>
+            <span><i class="fa-user"> By Thadeus &nbsp;&nbsp;</i></span>
+            <span><i class="fa-calendar"> 11/23/16 &nbsp;&nbsp;</i></span>
+            <span><i class="fa-comments-o"> 6 comments</i></span>
+          </p>
+          <p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text</p>
+        </div>
+      </div>
+
+      <div class="col-sm-12"
+        style="padding:0px;border: 1px solid black;padding-bottom: 20px;border-top: none;border-left: none;padding-top:20px;">
+        <div class="col-sm-6" style="background-color:lightgray;height:100px;"></div>
+        <div class="col-sm-6">
+          <h5>Heading</h5>
+          <p>
+            <span><i class="fa-user"> By Thadeus &nbsp;&nbsp;</i></span>
+            <span><i class="fa-calendar"> 11/23/16 &nbsp;&nbsp;</i></span>
+            <span><i class="fa-comments-o"> 6 comments</i></span>
+          </p>
+          <p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text</p>
+        </div>
+      </div>
+
+      <div class="col-sm-12"
+        style="padding:0px;border: 1px solid black;padding-bottom: 20px;border-top: none;border-left: none;padding-top:20px;">
+        <div class="col-sm-6" style="background-color:lightgray;height:100px;"></div>
+        <div class="col-sm-6">
+          <h5>Heading</h5>
+          <p>
+            <span><i class="fa-user"> By Thadeus &nbsp;&nbsp;</i></span>
+            <span><i class="fa-calendar"> 11/23/16 &nbsp;&nbsp;</i></span>
+            <span><i class="fa-comments-o"> 6 comments</i></span>
+          </p>
+          <p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text</p>
+        </div>
+      </div>
+      <div class="col-sm-12"
+        style="padding:0px;border: 1px solid black;padding-bottom: 20px;border-top: none;border-left: none;padding-top:20px;">
+        <div class="col-sm-6" style="background-color:lightgray;height:100px;"></div>
+        <div class="col-sm-6">
+          <h5>Heading</h5>
+          <p>
+            <span><i class="fa-user"> By Thadeus &nbsp;&nbsp;</i></span>
+            <span><i class="fa-calendar"> 11/23/16 &nbsp;&nbsp;</i></span>
+            <span><i class="fa-comments-o"> 6 comments</i></span>
+          </p>
+          <p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text</p>
+        </div>
+      </div>
+
+      <div class="col-sm-12"
+        style="padding:0px;border: 1px solid black;padding-bottom: 20px;border-top: none;border-left: none;padding-top:20px;">
+        <div class="col-sm-6" style="background-color:lightgray;height:100px;"></div>
+        <div class="col-sm-6">
+          <h5>Heading</h5>
+          <p>
+            <span><i class="fa-user"> By Thadeus &nbsp;&nbsp;</i></span>
+            <span><i class="fa-calendar"> 11/23/16 &nbsp;&nbsp;</i></span>
+            <span><i class="fa-comments-o"> 6 comments</i></span>
+          </p>
+          <p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text</p>
+        </div>
+      </div>
+      <div class="col-sm-12" style="border:1px solid black;border-left:none;border-top:none;border-bottom:none;">
+        <nav aria-label="...">
+          <ul class="pagination">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1">Previous</a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">2 <span class="sr-only">2</span></a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="col-sm-4" style="padding-left:25px;padding-right:0px;">
+      <aside>
+        <h5>FROM OUR FRIENDS</h5>
+        <div style="background-color:lightgrey;height:100px;text-align:center;">BUY ME!</div>
+        <div>
+          <h5>TRENDING POSTS</h5>
+          <div style="display: block;height:100px;margin:15px 0px;">
+            <p><img src="pic_trulli.jpg" alt="Trulli" width="100" height="100"
+                style="float:left;border:1px solid;margin-right:20px;">I am here</p>
+          </div>
+
+          <div style="display: block;height:100px;margin:15px 0px;">
+            <p><img src="pic_trulli.jpg" alt="Trulli" width="100" height="100"
+                style="float:left;border:1px solid;margin-right:20px;">I am here</p>
+          </div>
+          <div style="display: block;height:100px;margin:15px 0px;">
+            <p><img src="pic_trulli.jpg" alt="Trulli" width="100" height="100"
+                style="float:left;border:1px solid;margin-right:20px;">I am here</p>
+
+          </div>
+
+
+        </div>
+      </aside>
+    </div>
+
+    <!-- </div> -->
+  </div>
+  <footer class="container-fluid" style="padding:0px;border-top:1px solid;">
+    <div class="col-sm-12">
+      <div class="col-sm-4">
+        <h5>FLICKR IMAGES</h5>
+        <div class="flickrImg1">
+          <img class="thumbnail" src="https://placehold.it/75" alt="image of space dog">
+        </div>
+        <div class="flickrImg1">
+          <img class="thumbnail" src="https://placehold.it/75" alt="image of space dog">
+        </div>
+        <div class="flickrImg1">
+          <img class="thumbnail" src="https://placehold.it/75" alt="image of space dog">
+        </div>
+        <div class="flickrImg1">
+          <img class="thumbnail" src="https://placehold.it/75" alt="image of space dog">
+        </div>
+        <div class="flickrImg1">
+          <img class="thumbnail" src="https://placehold.it/75" alt="image of space dog">
+        </div>
+        <div class="flickrImg1">
+          <img class="thumbnail" src="https://placehold.it/75" alt="image of space dog">
+        </div>
+        <div class="flickrImg1">
+          <img class="thumbnail" src="https://placehold.it/75" alt="image of space dog">
+        </div>
+        <div class="flickrImg1">
+          <img class="thumbnail" src="https://placehold.it/75" alt="image of space dog">
+        </div>
+        
+      </div>
+      <div class="col-sm-4">
+        <h5>FLICKR IMAGES</h5>
+        <span class="flickrImg">Space</span>
+        <span class="flickrImg">Galaxies</span>
+        <span class="flickrImg">Milky Way</span>
+        <span class="flickrImg">Black Holes</span>
+        <span class="flickrImg">Rebels</span>
+        <span class="flickrImg">Death Star</span>
+        <span class="flickrImg">Republic</span>
+        <span class="flickrImg">R2D2</span>
+      </div>
+      <div class="col-sm-4">
+        <h5>RANDOM IMAGES</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti quam voluptatum vel repellat ab similique
+          molestias molestiae ea omnis eos, id asperiores est praesentium, voluptate officia nulla aspernatur sequi
+          aliquam.</p>
+      </div>
+    </div>
+    <div class="col-sm-12" style="border-top:1px solid;">
+      <div class="col-sm-6">
+        <ul class="" style="display: inline-flex;list-style-type: none;">
+          <li class="pd"><a href="#">Legal</a></li>
+          <li class="pd"><a href="#">Partner</a></li>
+          <li class="pd"><a href="#">Explore</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <ul class="" style="float:right;list-style-type: none;">
+          <li class="pd">Copyright © 2099 Random Mag</li>
+        </ul>
+      </div>
+
+
+    </div>
+  </footer>
+
 </body>
 
 </html>
