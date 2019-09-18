@@ -1,20 +1,61 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>Page Title</title>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+    <script></script>
 </head>
+
 <body>
-<div > 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
-</div>
-<div>
-    <h1>Second div heading</h1>
-    <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.ß</p>
-    
-        <img src="" alt="image">
-    
-</div>
+    <br />
+    <input type="text" id="Name">
+    <button id="Add"> ADD </button>
+    <ul id="UL">
+
+    </ul>
+    <script>
+        var arr =[];
+        var Add = document.getElementById('Add');
+        var UL = document.getElementById('UL');
+        var Name = document.getElementById('Name');
+        Add.addEventListener('click', function () {
+            // create New Ele
+           
+            var li = document.createElement('li');
+            li.innerText = Name.value;
+            
+            if(Name.value == ""){
+                alert("please enter value")
+               // UL.appendChild(li);
+            }
+            else{
+                console.log(arr, "before appending");
+                if(arr.indexOf(Name.value) !== -1){
+        alert("Value exists!")
+    } else{
+       // alert("Value does not exists!");
+        UL.appendChild(li);
+        arr.push(li.innerText);
+           console.log(arr, "after appending");
+           
+
+    }
+                      
+            }
+         //   console.log(arr,"array values after pushing");
+            Name.value = "";
+
+            li.addEventListener('click', function () {
+                UL.removeChild(this);
+                arr.shift(this)
+                console.log(arr, "array values after removing")
+            });
+        });
+
+
+    </script>
+
 </body>
+
 </html>
